@@ -2,7 +2,7 @@
 [x,y] = generate_data(20);
 
 %%
-%Blended Dynamics - Data 하나씩을 가지는 경우
+%Blended Dynamics - each agent holds a single data point
 trajectory = 0;
 verbose = 1;
 
@@ -11,8 +11,8 @@ time = 20;
 dt = 0.0001;
 k1 = 1000;
 k2 = 1000;
-N = size(x,1); %Agent 수
-n = 2; %feature 수
+N = size(x,1); %number of agents
+n = 2; %number of features
 
 %Make agents
 agents = [];
