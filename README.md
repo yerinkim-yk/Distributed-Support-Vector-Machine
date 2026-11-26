@@ -34,6 +34,18 @@ SVM_Dual_Simulation
 - Set `trajectory = 1` to also plot the time trajectories of `z` and `alpha`.
 - To make the results reproducible, set a seed at the top of the script, e.g. `rng(1);`.
 
+## Results
+
+![Simulation result of the proposed algorithm](DSVM_result.png)
+
+The proposed algorithm applied to a 2-dimensional dataset with `N = 20` agents (left: `k = 300`, right: `k = 1000`).
+
+- **Solid lines**: the hyperplanes estimated by the `N` agents
+- **Bold dashed line**: the global optimal hyperplane computed with CVX
+- **Thin dashed lines**: the margins of the global optimal hyperplane
+
+As the coupling gain `k` grows, the `N` agents' hyperplanes reach consensus and approximately converge to the global optimal hyperplane.
+
 ## Citation
 
 ```bibtex
